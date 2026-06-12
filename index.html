@@ -25,10 +25,10 @@
 
         /* NEON DARK THEME — Electric Purple + Cyan + Deep Space */
         :root {
-            --primary: #8B5CF6;
+            --primary: #8B5CF6;      /* Electric Purple */
             --primary-dark: #7C3AED;
             --primary-glow: #A855F7;
-            --secondary: #06B6D4;
+            --secondary: #06B6D4;    /* Cyan */
             --secondary-dark: #0891B2;
             --accent-pink: #EC4899;
             --dark-bg: #0A0A0F;
@@ -391,33 +391,18 @@
         .portfolio-img.barber { background: linear-gradient(135deg, #EC4899, #8B5CF6); }
         .portfolio-img.salon { background: linear-gradient(135deg, #06B6D4, #EC4899); }
         .portfolio-img.cafe { background: linear-gradient(135deg, #8B5CF6, #EC4899); }
+        .portfolio-img.fitness { background: linear-gradient(135deg, #06B6D4, #8B5CF6); }
+        .portfolio-img.retail { background: linear-gradient(135deg, #EC4899, #06B6D4); }
 
         .portfolio-info {
             padding: 28px;
-        }
-
-        .portfolio-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 16px;
-            color: var(--secondary);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: 0.2s;
-        }
-
-        .portfolio-link:hover {
-            gap: 12px;
-            color: var(--primary);
         }
 
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin: 16px 0;
+            margin-top: 16px;
         }
 
         .tech-tag {
@@ -749,7 +734,7 @@
             <div class="hero-content">
                 <span class="hero-badge"><i class="fas fa-bolt"></i> Next-Gen Digital Agency</span>
                 <h1>Empowering small businesses with <span class="gradient-text">cutting-edge</span> digital solutions</h1>
-                <p>Websites, mobile apps, booking systems we build modern, lightning-fast solutions for restaurants, barbers, salons, and local shops.</p>
+                <p>Websites, mobile apps, booking systems — we build modern, lightning-fast solutions for restaurants, barbers, salons, and local shops.</p>
                 <div class="btn-group">
                     <a href="#contact" class="btn btn-primary"><i class="fas fa-rocket"></i> Start a project</a>
                     <a href="#portfolio" class="btn btn-outline"><i class="fas fa-eye"></i> See our work</a>
@@ -788,28 +773,15 @@
     <div class="container">
         <div class="section-header">
             <h2>Recent <span class="gradient-text">creations</span></h2>
-            <p>Real solutions for real local businesses — including live projects you can visit</p>
+            <p>Real solutions for real local businesses</p>
         </div>
         <div class="portfolio-grid">
-            <!-- Jimmaa Coffee - Featured with live link -->
-            <div class="portfolio-item">
-                <div class="portfolio-img restaurant"><i class="fas fa-mug-hot"></i></div>
-                <div class="portfolio-info">
-                    <h3>Jimmaa Coffee</h3>
-                    <p>Complete digital identity + online ordering platform celebrating Ethiopian coffee heritage. Live in Aurora, CO.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Responsive</span>
-                    </div>
-                    <a href="https://tesfa712.github.io/jimmaa-coffee/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-                        <i class="fas fa-external-link-alt"></i> Visit Live Website →
-                    </a>
-                </div>
-            </div>
-            <div class="portfolio-item"><div class="portfolio-img barber"><i class="fas fa-cut"></i></div><div class="portfolio-info"><h3>Classic Cuts Barber</h3><p>Appointment booking with SMS reminders.</p><div class="tech-tags"><span class="tech-tag">Flutter</span><span class="tech-tag">Firebase</span></div><a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i> View case study</a></div></div>
-            <div class="portfolio-item"><div class="portfolio-img salon"><i class="fas fa-spa"></i></div><div class="portfolio-info"><h3>Bliss Beauty Lounge</h3><p>Loyalty app with push notifications.</p><div class="tech-tags"><span class="tech-tag">React Native</span><span class="tech-tag">Stripe</span></div><a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i> View case study</a></div></div>
-            <div class="portfolio-item"><div class="portfolio-img cafe"><i class="fas fa-pizza-slice"></i></div><div class="portfolio-info"><h3>Trattoria Roma</h3><p>Online ordering + delivery tracking.</p><div class="tech-tags"><span class="tech-tag">Vue.js</span><span class="tech-tag">Django</span></div><a href="#" class="portfolio-link"><i class="fas fa-arrow-right"></i> View case study</a></div></div>
+            <div class="portfolio-item"><div class="portfolio-img restaurant"><i class="fas fa-mug-hot"></i></div><div class="portfolio-info"><h3>Jimmaa Coffee</h3><p>Complete digital identity + online ordering platform.</p><div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span></div></div></div>
+            <div class="portfolio-item"><div class="portfolio-img barber"><i class="fas fa-cut"></i></div><div class="portfolio-info"><h3>Classic Cuts Barber</h3><p>Appointment booking with SMS reminders.</p><div class="tech-tags"><span class="tech-tag">Flutter</span><span class="tech-tag">Firebase</span></div></div></div>
+            <div class="portfolio-item"><div class="portfolio-img salon"><i class="fas fa-spa"></i></div><div class="portfolio-info"><h3>Bliss Beauty Lounge</h3><p>Loyalty app with push notifications.</p><div class="tech-tags"><span class="tech-tag">React Native</span><span class="tech-tag">Stripe</span></div></div></div>
+            <div class="portfolio-item"><div class="portfolio-img cafe"><i class="fas fa-pizza-slice"></i></div><div class="portfolio-info"><h3>Trattoria Roma</h3><p>Online ordering + delivery tracking.</p><div class="tech-tags"><span class="tech-tag">Vue.js</span><span class="tech-tag">Django</span></div></div></div>
+            <div class="portfolio-item"><div class="portfolio-img fitness"><i class="fas fa-heartbeat"></i></div><div class="portfolio-info"><h3>FitHub Studio</h3><p>Class booking + membership management.</p><div class="tech-tags"><span class="tech-tag">Flutter</span><span class="tech-tag">Node.js</span></div></div></div>
+            <div class="portfolio-item"><div class="portfolio-img retail"><i class="fas fa-store"></i></div><div class="portfolio-info"><h3>Urban Threads</h3><p>E-commerce + loyalty rewards.</p><div class="tech-tags"><span class="tech-tag">Shopify</span><span class="tech-tag">Liquid</span></div></div></div>
         </div>
     </div>
 </section>
@@ -931,7 +903,6 @@
             <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
         <p style="margin: 24px 0 12px;">© 2026 Tesfa Software Solutions — Next-gen digital solutions for small businesses.</p>
-        <p style="font-size: 0.8rem;">🚀 Proudly featuring <a href="https://tesfa712.github.io/jimmaa-coffee/" target="_blank" style="color: var(--secondary);">Jimmaa Coffee</a> — live in Aurora, CO</p>
     </div>
 </footer>
 
